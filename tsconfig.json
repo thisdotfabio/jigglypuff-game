@@ -1,0 +1,19 @@
+{
+    "files": [
+        "src/main.ts",
+        "src/polyfills.ts"
+    ],
+    "include": [
+        "src/**/*.d.ts"
+    ],
+    "compilerOptions": {
+        "baseUrl": "./",
+        "experimentalDecorators": true,
+        "lib": [
+            "ES2020",
+            "DOM"
+        ],
+        "moduleResolution": "node",
+        "target": "ES2015"
+    } 
+}
