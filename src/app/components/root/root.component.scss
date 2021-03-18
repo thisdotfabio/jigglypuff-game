@@ -1,0 +1,30 @@
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.container  {
+    display: flex;
+    flex-direction: row;
+
+    width: 80%;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.container>* {
+    border: 2px solid black;
+    border-radius: 10px;
+    
+    padding: 20px;
+    position: relative;
+}
+
+.guess-panel {
+    flex: 1 0 auto;
+}
+
+.teams-panel {
+    flex: 0 0 none;
+}
