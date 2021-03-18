@@ -1,0 +1,39 @@
+.guess-panel {
+    background-color: yellow;
+}
+
+.guess {
+    border: 1px solid black;
+    border-radius: 10px;
+    float: left;
+    margin: 1%;
+    width: 22%;
+    height: 120px;
+}
+
+.guess>div {
+    position: relative;
+
+    height: 100%;
+}
+
+.caption {
+    font-weight: bold;
+    
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    text-align: center;
+}
+
+.score {
+    font-size: 14px;
+
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    
+    text-align: center;
+}
