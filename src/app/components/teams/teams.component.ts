@@ -23,6 +23,7 @@ export class TeamsComponent implements OnInit {
     }
 
     onSelect(team: interfaces.Team) {
+        this.teamsService.setSelectedTeam(team);
         this.selectedTeam = team;
     }
 }

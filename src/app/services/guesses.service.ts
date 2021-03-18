@@ -20,4 +20,10 @@ export class GuessesService {
 
         return guess;
     }
+
+    setPlayed(id: number): void {
+        GUESSES.find(
+            guess => guess.id === id
+        ).played = true;
+    }
 }

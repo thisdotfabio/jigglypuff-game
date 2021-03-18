@@ -23,7 +23,8 @@ export class GuessComponent implements OnInit {
     constructor(
         private route: ActivatedRoute,
         private location: Location,
-        private guessesService: services.GuessesService
+        private guessesService: services.GuessesService,
+        private teamsService: services.TeamsService
     ) {}
 
     ngOnInit() {
@@ -54,8 +55,23 @@ export class GuessComponent implements OnInit {
         this.location.back();
     }
 
+    unlockClue2() {
+        this.guess.baseScore -= this.guess.lessScore2;
+        this.lockClue2 = false;
+    }
+
+    unlockClue3() {
+        this.guess.baseScore -= this.guess.lessScore3;
+        this.lockClue3 = false;
+    }
+
     resolve() {
+        this.guessesService.setPlayed(this.guess.id);
         this.lockResult = false;
         this.audio.play();
+    }
+
+    givePoints() {
+        this.teamsService.givePoints(this.guess.baseScore);
     }
 }

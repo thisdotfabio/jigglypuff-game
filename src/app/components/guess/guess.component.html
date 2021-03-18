@@ -18,9 +18,9 @@
             <p class="title">Pista 2</p>
             <div class="locked"
                 *ngIf="lockClue2"
-                (click)="lockClue2=!lockClue2">
+                (click)="unlockClue2()">
                 <p>Pista bloqueada</p>
-                <p>-5 pts.</p>
+                <p>-{{guess.lessScore2}} pts.</p>
             </div>
             <div class="clue"
                 *ngIf="!lockClue2">
@@ -31,9 +31,9 @@
             <p class="title">Pista 3</p>
             <div class="locked"
                 *ngIf="lockClue3"
-                (click)="lockClue3=!lockClue3">
+                (click)="unlockClue3()">
                 <p>Pista bloqueada</p>
-                <p>-5 pts.</p>
+                <p>-{{guess.lessScore3}} pts.</p>
             </div>
         </div>
     </div>
@@ -47,10 +47,11 @@
         <button 
             *ngIf="!lockResult"
             (click)="pause()">
-            {{guess.song}}
+            <b>{{guess.song}}</b>
         </button>
         <button
-            *ngIf="!lockResult">
+            *ngIf="!lockResult"
+            (click)="givePoints()">
             Dar puntos
         </button>
     </div>

@@ -1,6 +1,7 @@
 export interface Guess {
     id: number,
     guessName: string,
+    played: boolean,
     song: string,
     baseScore: number,
     baseClue: string,
