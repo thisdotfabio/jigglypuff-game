@@ -1,0 +1,21 @@
+<div>
+    <h3>Equipos</h3>
+    <div class="team-panel"
+        *ngFor="let team of teams"
+        [class.selected]="team === selectedTeam"
+        (click)="onSelect(team)">
+        <h5>{{team.name}}</h5>
+        <!-- <a class="add-members">
+            <svg width="16" height="16">
+                <path d="M0,16a8,8,0,0,1,7,-8a4,4,0,1,1,2,0a8,8,0,0,1,7,8Z"/>
+            </svg>
+        </a>
+        <div class="members-edit">
+            <textarea name="" id="" cols="20" rows="5"></textarea>
+        </div> -->
+        <div class="members">
+            <p *ngFor="let member of team.members">{{member}}</p>
+        </div>
+        <p class="score">Puntuación: {{team.score}} pts.</p>
+    </div>
+</div>

@@ -8,7 +8,8 @@ import * as component from 'src/app/components';
 
 @NgModule({
     declarations: [
-        component.RootComponent
+        component.RootComponent,
+        component.TeamsComponent
     ],
     imports: [
         BrowserModule,
