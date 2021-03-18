@@ -1,7 +1,8 @@
 <div class="guess-panel">
     <div class="guess"
         *ngFor="let guess of guesses">
-        <div *ngIf="true">
+        <div *ngIf="true"
+            routerLink="/guess/{{guess.id}}">
             <p class="caption">{{guess.guessName | uppercase}}</p>
             <p class="score">({{guess.baseScore}} pts.)</p>
         </div>

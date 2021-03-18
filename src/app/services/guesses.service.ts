@@ -14,4 +14,10 @@ export class GuessesService {
 
         return guesses;
     }
+
+    getGuess(id: number): Observable<interfaces.Guess> {
+        const guess = of(GUESSES.find(guess => guess.id === id));
+
+        return guess;
+    }
 }

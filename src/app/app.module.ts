@@ -9,6 +9,7 @@ import * as component from 'src/app/components';
 @NgModule({
     declarations: [
         component.RootComponent,
+        component.GuessComponent,
         component.GuessPanelComponent,
         component.TeamsComponent
     ],
