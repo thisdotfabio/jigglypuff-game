@@ -24,7 +24,7 @@
             </div>
             <div class="clue"
                 *ngIf="!lockClue2">
-                <p></p>
+                <p class="clueText">{{guess.clue2}}</p>
             </div>
         </div>
         <div>
@@ -34,6 +34,10 @@
                 (click)="unlockClue3()">
                 <p>Pista bloqueada</p>
                 <p>-{{guess.lessScore3}} pts.</p>
+            </div>
+            <div class="clue"
+                *ngIf="!lockClue3">
+                <img src="{{guess.clue3}}" class="clueImg">
             </div>
         </div>
     </div>
