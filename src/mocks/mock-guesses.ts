@@ -1,4 +1,147 @@
 import { Guess } from 'src/app/interfaces/guess';
 export const GUESSES: Guess[] = [
-    {id: 7, guessName: 'Blues chileno', played: false, song: 'Paranoid - Black Sabbath', baseScore: 5, lessScore2: 2, lessScore3: 2, baseClue: 'https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview111/v4/99/55/37/995537a9-6fdc-a594-8962-4684e0b27cf8/mzaf_5145864427363703944.plus.aac.p.m4a', clue2: 'es una canción', clue3: 'https://upload.wikimedia.org/wikipedia/en/6/64/Black_Sabbath_-_Paranoid.jpg'}
+    {
+        id: 1,
+        guessName: 'Blues Chileno',
+        played: false,
+        song: 'Santa Lucía - La rata bluesera',
+        baseScore: 5,
+        lessScore2: 2,
+        lessScore3: 2,
+        baseClue: 'https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview30/v4/e5/d8/52/e5d85293-03db-2aca-c4e7-4b5f452392fe/mzaf_7985668599431748789.plus.aac.p.m4a',
+        clue2: 'Lleva por nombre un cerro de Santiago',
+        clue3: 'http://3.bp.blogspot.com/-HrsDP8Z7cgs/TtTify3t2QI/AAAAAAAAApk/jogAPbgdHBk/s1600/cdrata2.miniatura.jpg'
+    },
+    {
+        id: 2,
+        guessName: 'Rock Argentino',
+        played: false,
+        song: 'Balada del diablo y la muerte - La renga',
+        baseScore: 5,
+        lessScore2: 2,
+        lessScore3: 2,
+        baseClue: 'https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview113/v4/4e/c6/83/4ec6836b-8eb3-a243-e591-a90c5f843127/mzaf_8177032728112949478.plus.aac.p.m4a',
+        clue2: 'Es la más conocida de la banda, y seguro la has escuchado y hasta cantado en algún carrete',
+        clue3: 'http://3.bp.blogspot.com/_VEXnsrrxWi4/TGClf1OFVlI/AAAAAAAAAFc/2XsnNuwK8O4/s1600/La_Renga-Despedazado_Por_Mil_Partes-Frontal.jpg'
+    },
+    {
+        id: 3,
+        guessName: 'Nueva Ola',
+        played: false,
+        song: 'Entre la arena y el mar - Peter Rock',
+        baseScore: 5,
+        lessScore2: 2,
+        lessScore3: 2,
+        baseClue: 'https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview114/v4/12/c8/e5/12c8e548-81f3-28e4-65bb-229d57f3bc6a/mzaf_3822741787577696489.plus.aac.p.m4a',
+        clue2: 'Esta canción fue su primer éxito en español',
+        clue3: 'http://static.t13.cl/images/sizes/1200x675/1461013594-peter.jpg'
+    },
+    {
+        id: 4,
+        guessName: 'POP español',
+        played: false,
+        song: 'La camisa negra - Juanes',
+        baseScore: 5,
+        lessScore2: 3,
+        lessScore3: 1,
+        baseClue: 'https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview113/v4/1e/7c/eb/1e7cebd1-8129-a7af-0172-c19be2835cec/mzaf_16082362039598821325.plus.aac.p.m4a',
+        clue2: 'Se convirtió en la camción más importante y escuchada incluso en África.',
+        clue3: 'https://img.discogs.com/-OQX4YvFUx9igx5AtpjSyOZxd5s=/fit-in/600x596/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3865780-1347386937-4218.jpeg.jpg'
+    },
+    {
+        id: 5,
+        guessName: 'Chicago Blues',
+        played: false,
+        song: 'Hoochie coochie man - Muddy Waters',
+        baseScore: 7,
+        lessScore2: 2,
+        lessScore3: 2,
+        baseClue: 'https://audio-ssl.itunes.apple.com/itunes-assets/Music2/v4/0c/cc/8e/0ccc8e84-865b-8312-a89c-b4cfb1939bf0/mzaf_1158451735979041707.plus.aac.p.m4a',
+        clue2: 'Es el clásico de los clásicos del blues.',
+        clue3: 'https://mississippitoday.org/wp-content/uploads/2017/07/51QPNf0teL.jpg'
+    },
+    {
+        id: 6,
+        guessName: '60\'s Rock \'n\' Roll',
+        played: false,
+        song: 'Johnny B. Goode - Chuck Berry',
+        baseScore: 7,
+        lessScore2: 2,
+        lessScore3: 2,
+        baseClue: 'https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview113/v4/8c/7e/5e/8c7e5eeb-6b6b-60a5-97b9-3d6faffa8a54/mzaf_7668869073829532621.plus.aac.p.m4a',
+        clue2: 'Su primo Marvin se la enseñó cuando Marty McFly la tocaba en el baile de graduación.',
+        clue3: 'https://upload.wikimedia.org/wikipedia/en/3/3d/Chuck_Berry_Is_on_Top_cover.jpg'
+    },
+    {
+        id: 7,
+        guessName: 'Power Ballad',
+        played: false,
+        song: 'Making love out of nothing at all - Air Supply',
+        baseScore: 7,
+        lessScore2: 2,
+        lessScore3: 2,
+        baseClue: 'https://audio-ssl.itunes.apple.com/itunes-assets/Music/v4/5f/27/ee/5f27ee0b-1401-767f-5614-0100af3feaec/mzaf_3130833377096894723.plus.aac.p.m4a',
+        clue2: 'Hay un moco en el arroz',
+        clue3: 'http://cfile1.uf.tistory.com/image/227F244D5318D0A12D9D9B'
+    },
+    {
+        id: 8,
+        guessName: 'Dance Pop',
+        played: false,
+        song: 'Oops! I did it again - Britney Spears',
+        baseScore: 7,
+        lessScore2: 2,
+        lessScore3: 2,
+        baseClue: 'https://audio-ssl.itunes.apple.com/itunes-assets/Music/8e/d6/a4/mzm.tqkjovoz.aac.p.m4a',
+        clue2: 'Segundo hit de la cantante, y el traje usado en el videoclip ha sido uno de los más usando en halloween.',
+        clue3: 'https://p2.trrsf.com/image/fget/cf/460/0/images.terra.com/2021/03/17/55308178-britney-reproducao-youtube.jpg'
+    },
+    {
+        id: 9,
+        guessName: 'R&B',
+        played: false,
+        song: 'Lucille - B.B. King',
+        baseScore: 10,
+        lessScore2: 3,
+        lessScore3: 2,
+        baseClue: 'https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview128/v4/5b/a3/e2/5ba3e229-161f-ca7e-c0b5-f7a54548f68f/mzaf_9070387585033410119.plus.aac.p.m4a',
+        clue2: 'Su instrumento tiene el mismo nombre de la canción.',
+        clue3: 'https://guitar.com/wp-content/uploads/2019/07/GettyImages-473531382.jpg'
+    },
+    {
+        id: 10,
+        guessName: 'España',
+        played: false,
+        song: 'El vals del obrero - Ska-P',
+        baseScore: 10,
+        lessScore2: 3,
+        lessScore3: 3,
+        baseClue: 'https://audio-ssl.itunes.apple.com/itunes-assets/Music/45/af/4e/mzm.fbboxywz.aac.p.m4a',
+        clue2: 'Muchos conocen erróneamente esta canción como: "Resistencia" o "Somos la revolución"',
+        clue3: 'https://i.ytimg.com/vi/1Te7kAqv_2M/maxresdefault.jpg'
+    },
+    {
+        id: 11,
+        guessName: 'Trash metal',
+        played: false,
+        song: 'Raining blood - Slayer',
+        baseScore: 10,
+        lessScore2: 3,
+        lessScore3: 3,
+        baseClue: 'https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview128/v4/53/7b/63/537b6394-f872-2f36-5812-657464e00ea9/mzaf_400376518579969434.plus.aac.p.m4a',
+        clue2: 'Eric Cartman la usa para ahuyentar a los hippies',
+        clue3: 'https://upload.wikimedia.org/wikipedia/en/8/8e/Reign_in_blood.jpg'
+    },
+    {
+        id: 12,
+        guessName: 'Infantil',
+        played: false,
+        song: 'Severlá - Otto y los sarcófagos del ritmo',
+        baseScore: 10,
+        lessScore2: 5,
+        lessScore3: 3,
+        baseClue: 'https://audio-ssl.itunes.apple.com/itunes-assets/Music3/v4/07/2f/19/072f19eb-6d47-708b-1139-5a0346ce998b/mzaf_5923259198424678760.plus.aac.p.m4a',
+        clue2: 'uǝᴉq ɐuǝns séʌǝɹ lɐ',
+        clue3: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/31_minutos_logo.svg/1200px-31_minutos_logo.svg.png'
+    }
 ];
